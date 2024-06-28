@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            display:block;
+            text-decoration: none;
+            color: black;
+            font-size: 26px;
+            padding: 5px 10px;
+            border: 1.8px solid #120;
+            border-width: 2px 0 2px 2px;
+        }
+
+        a:first-child{
+            border-radius: 10px 0 0 10px;
+        }
+        a:last-child{
+            border-radius: 0 10px 10px 0;
+            border-width: 2px;
+        }
+
+        a.active{
+            background-color: rgb(13, 0, 255);
+            color: white;
+        }
+
+
+        a:hover:not(.active){
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section style="height: 100vh; background-color: antiquewhite; display: flex; align-items: center; justify-content: center;"> 
+        <div class="content" style="display: flex;">
+            <a href="#">&lt;</a>
+            <a href="#">2</a>
+            <a class="active" href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">&gt;</a>
+        </div>
+    </section>
+</body>
+</html>

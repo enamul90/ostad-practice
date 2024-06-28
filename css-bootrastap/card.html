@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .hero-aria{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-aria .card{
+            max-width: 700px;
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .hero-aria .card h3{
+            text-align: center;
+            padding-bottom: 10px;
+            color: black;
+            font-weight: 600;
+        }
+        .hero-aria .card h4{
+            text-align: center;
+            padding-bottom: 10px;
+            color: rgb(83, 82, 82);
+            font-weight: 500;
+        }
+        .hero-aria .card .input-box{
+            display: flex;
+            justify-content:space-between;
+            padding: 15px;
+        }
+        .hero-aria .card .input-box input{
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            border: 1px solid #e5e4e4;
+            background-color: white;
+            text-align: center;
+        }
+        .hero-aria .card .button-box{
+            display: flex;
+            justify-content: center;
+        }
+        .hero-aria .card .button-box button{
+            color: white;
+            background-color: blue;
+            padding: 10px 20px;
+            margin-top: 9px;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="hero-aria">
+        <div class="card">
+            <h3>Verify</h3>
+            <h4>Your Code Was sent to you via email</h4>
+            <div class="input-box">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+            </div>
+            <div class="button-box">
+                <button>Verify</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
