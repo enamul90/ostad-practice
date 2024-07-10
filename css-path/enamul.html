@@ -12,23 +12,29 @@
         background-color: black;
        }
        .wraper{
-        display: flex;
+        position: relative;
+        /* display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 100vh; */
+
        }
        .aria .left{
-        clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+        /* clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%); */
        }
        .aria .right{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+        background-color: rgb(255, 194, 120) !important;
+        position: absolute;
+        top: 0;
+        right: 0;
        }
     </style>
 </head>
 <body>
     <div class="wraper">
-        <div class="aria w-100 d-flex">
-            <div class="left p-5 bg-body-secondary w-50">
+        <div class="aria w-100">
+            <div class="left p-5 bg-body-secondary w-100">
 
             </div>
             <div class="right p-5 bg-body-secondary w-50">
