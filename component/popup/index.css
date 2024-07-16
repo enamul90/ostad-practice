@@ -7,10 +7,13 @@
 .popup{
     width: 550px !important;
     position: absolute ;
-    top:0;
-    left: 33%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transform: scale(.2);
     visibility: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
     & button{
         color: #fff;
         font-weight: 600;
@@ -18,10 +21,23 @@
     & button:hover{
         color: #fff;
     }
+
+    
 }
 
 .open{
     transform: scale(1);
     visibility: visible;
-    top: 25%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-image{
+    height: 250px;
+    width:250px ;
+    border-radius: 999px;
+    display:block;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
