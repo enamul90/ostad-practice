@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="header-wreaper">
+            <h3>Logo</h3>
+
+            <ul>
+                <li><a >Home</a></li>
+                <li><a >Product</a></li>
+                <li><a >About</a></li>
+                <li><a >Contact</a></li>
+            </ul>
+
+            <div class="right-site">
+                <h4 onclick="card()" id="textCard">Card</h4>
+                <h4 onclick="Profile()" id="textProfile">Profile</h4>
+                <h4 onclick="notification()" id="textNotification">Notification</h4>
+
+                <div class="popup" id="popup-1" onclick="cardHide()">
+                    <h3>Card</h3>
+                    <p>Sit amet consectetur adipisicing elit. Nemo officia excepturi corporis necessitatibus a? Ut eligendi officiis iure praesentium esse!</p>
+                </div>
+
+                <div class="popup" id="popup-2" onclick="cardHide()">
+                    <h3>Profile</h3>
+                    <p>Sit amet consectetur adipisicing elit. Nemo officia excepturi corporis necessitatibus a? Ut eligendi officiis iure praesentium esse!</p>
+                </div>
+
+                <div class="popup" id="popup-3" onclick="cardHide()">
+                    <h3>Notification</h3>
+                    <p>Sit amet consectetur adipisicing elit. Nemo officia excepturi corporis necessitatibus a? Ut eligendi officiis iure praesentium esse!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        let popup1 = document.getElementById("popup-1")
+        let text = document.getElementById("textCard")
+
+        let popup2 = document.getElementById("popup-2")
+        let text2 = document.getElementById("textProfile")
+
+        let popup3 = document.getElementById("popup-3")
+        let text3 = document.getElementById("textNotification")
+
+
+        function card(){
+            popup1.classList.add("open")
+            text.classList.add("text-bold")
+            popup2.classList.remove("open")
+            text2.classList.remove("text-bold")
+            popup3.classList.remove("open")
+            text3.classList.remove("text-bold")
+        }
+
+        function Profile(){
+            popup1.classList.remove("open")
+            text.classList.remove("text-bold")
+            popup2.classList.add("open")
+            text2.classList.add("text-bold")
+            popup3.classList.remove("open")
+            text3.classList.remove("text-bold")
+        }
+
+        function notification(){
+            popup1.classList.remove("open")
+            text.classList.remove("text-bold")
+            popup2.classList.remove("open")
+            text2.classList.remove("text-bold")
+            popup3.classList.add("open")
+            text3.classList.add("text-bold")
+        }
+
+
+        function cardHide(){
+            popup1.classList.remove("open")
+            text.classList.remove("text-bold")
+            popup2.classList.remove("open")
+            text2.classList.remove("text-bold")
+            popup3.classList.remove("open")
+            text3.classList.remove("text-bold")
+        }
+
+
+    </script>
+
+</body>
+</html>
